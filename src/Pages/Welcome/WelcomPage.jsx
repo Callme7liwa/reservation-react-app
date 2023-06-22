@@ -1,21 +1,11 @@
+import Navbar from "../components/Navbar/Navbar";
 import "./Welcome.css";
 
 const WelcomPage = () => {
     return (
         <div className="welcome-page-container">
-            <div className="navbar-container">
-                <div className="navbar-left">
-                    <h1>Study <span>Connect</span></h1>
-                </div>
-                <div className="navbar-center">
-                    <span>Welcome</span>
-                    <span>Reservation</span>
-                    <span>My Reservation</span>
-                </div>
-                <div className="navbar-right">
-                    <span>LogOut</span>
-                </div>
-            </div>
+            
+            <Navbar />
 
             <div className="welcome-body">
                 <div className="welcome-body-left">
@@ -28,10 +18,8 @@ const WelcomPage = () => {
                         <div className="circle"></div>
                         <div className="line-demi"></div>
                     </div>
-                  
                 </div>
                 <div className="welcome-body-right">
-
                 </div>
             </div>
         </div>

@@ -1,0 +1,44 @@
+.reservation-page-container {
+    position: absolute;
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    min-height: 100vh;
+}
+
+.page-title {
+    position: relative;
+    width: 100%;
+    font-family: "Cairo";
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.page-title h1 span {
+    color: var(--color-blue-light);
+}
+
+.list-reservation {
+    position: relative;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.list-reservation .reservation-item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(20, 21, 21, 0.072);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-2);
+    border : 1px solid #99999932;
+}

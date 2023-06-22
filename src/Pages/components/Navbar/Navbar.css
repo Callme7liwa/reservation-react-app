@@ -1,0 +1,71 @@
+.navbar-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Cairo";
+}
+
+.navbar-container .navbar-left {
+    position: relative;
+    width: 20%;
+    display: flex;
+    align-items: end;
+}
+
+.navbar-left h1 {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: end;
+}
+
+.navbar-left h1  span {
+    color: var(--color-blue-light );
+
+}
+
+.navbar-container .navbar-center {
+    position: relative;
+    width: 40% ;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.navbar-container .navbar-center span {
+    width: 150px;
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.navbar-right {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-right  span {
+    position: relative;
+    margin-top: 20px;
+    padding: 7px 22px;
+    border-radius: 10px;
+    background-color: var(--color-blue-light);
+    color: white;
+    text-transform: uppercase;
+    font-family: "Cairo";
+    font-size: 14px;
+}
