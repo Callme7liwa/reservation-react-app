@@ -1,0 +1,302 @@
+@import url("./../../App.css");
+
+.login-page-container  {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-page-container .reservation-page_left {
+    position: relative;
+    left: 0;
+    width: 50%;
+    background-image: 
+                linear-gradient(to bottom, #396AFC, rgba(1, 1, 1, 0.77));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation-page_left .image-container {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 10%;
+}
+
+.reservation-page_left .icon-container {
+    padding: 10px 0px;
+}
+
+.reservation-page_left .image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reservation-page_left  .reservation-page_title{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.reservation-page_left  .reservation-page_citation{
+    position: relative;
+    width: 70%;
+    text-align: center;
+}
+
+.reservation-page_left  .reservation-page_title  h1 ,
+.reservation-page_left  .reservation-page_citation span{
+    font-family: "Cairo";
+    text-transform: uppercase;
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+}
+
+.reservation-page_left  .reservation-page_citation span  {
+    font-size: 14px;
+}
+
+.reservation-page_left .list-letters {
+    position: relative;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-page_left .list-letters span {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-blue-light);
+    color: white ;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-page-container .reservation-page_right {
+    position: relative;
+    top: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.reservation-page-right_content  {
+    position: relative;
+    width: 95%;
+    height: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation-page-right_content .icon-container {
+    position: relative;
+    margin-top: 10%;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #99999957;
+}
+
+.reservation-page-right_content .icon-container img {
+    position: relative;
+    width: 50px ; 
+    height: 50px;
+}
+
+.reservation-page-right_titles {
+    position: relative;
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.reservation-page-right_titles .first-title {
+    position: relative;
+    color: black;
+    font-family: "Cairo";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.reservation-page-right_titles .second-title {
+    position: relative;
+    text-align: center;
+    color: #999999c2;
+    font-size: 12px;
+    font-family: "Cairo";
+}
+
+.reservation-page-right_titles  .line-decoration {
+    position: relative;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.line-decoration .line{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #9999993a;
+}
+
+.line-decoration .circle {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #396AFC;
+    box-shadow: var(--box-shadow-2);
+}
+
+
+
+/* INPUT DECORATION */
+.reservation-page-right_inputs {
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.reservation-page-right_inputs .input-container {
+    position: relative;
+    width: 350px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(20, 21, 21, 0.072);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-2);
+    border : 1px solid #99999932;
+}
+
+.reservation-page-right_inputs .input-container  label {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+}
+
+.input-container  label  img {
+    width: 25px;
+}
+
+.reservation-page-right_inputs .input-container  label span {
+    color: black;
+    font-family: "Cairo";
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.reservation-page-right_inputs .input-container  input {
+    border: none;
+    outline: none;
+    font-size: 11px;
+    color: black;
+    font-family: "Nunito";
+    padding-left: 5px;
+}
+
+.reservation-page-right_inputs .input-container  input::placeholder{
+    color: rgba(0, 0, 0, 0.516);
+}
+
+
+.submit-button {
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button .submit-button-container {
+    position: relative;
+    width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-2);
+    background-color: var(--color-blue-light);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Cairo";
+    cursor:pointer ; 
+    transition: all 0.4s ease;
+    font-size: 14px;
+}
+
+.submit-button .submit-button-container:hover{
+    background-color: white;
+    color: var(--color-blue-light);
+    border: 1px solid var(--color-blue-light);
+}
+
+.register-here {
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    column-gap: 5px;
+    font-weight: bold;
+    font-family: "Cairo";
+}
+
+.register-here span:first-child{
+    color: #99999980;
+}
+
+.register-here span:last-child {
+    color: var(--color-blue-light);
+}
+
+.register-line {
+    position: relative;
+    width: 200px;
+    height: 1px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.167);
+}
