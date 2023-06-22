@@ -25,7 +25,8 @@
     width: 400px;
     height: 350px;
     overflow: hidden;
-    margin-top: 10%;
+    /* margin-top: 10%;
+    background-color: red; */
 }
 
 .reservation-page_left .icon-container {
@@ -110,9 +111,9 @@
 
 .reservation-page-right_content .icon-container {
     position: relative;
-    margin-top: 10%;
-    width: 80px;
-    height: 80px;
+    /* margin-top: 10%; */
+    width: 70px ; 
+    height: 70px;
     align-items: center;
     justify-content: center;
     background-color: var(--background-color);
@@ -125,8 +126,9 @@
 
 .reservation-page-right_content .icon-container img {
     position: relative;
-    width: 50px ; 
-    height: 50px;
+    width: 70px ; 
+    height: 70px;
+    padding: 10px;
 }
 
 .reservation-page-right_titles {

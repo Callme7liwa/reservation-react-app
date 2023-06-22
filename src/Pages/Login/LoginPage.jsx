@@ -10,13 +10,38 @@ const  LoginPage = () => {
     const [password,setPassword] = useState("");
 
 
-    const SubmitLogin = () => {
+    const  SubmitLogin = async () => {
         if(email.length <=0 || password.length <=0)
         alert("please fill all the inputs ");
         else {
-            
-        }
+            try {
+                const response = await fetch('http://localhost:3000/login', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({ email, password }),
+                  
+                });
+          console.log(response)
+                if (response.ok) {
+                  const { message, data, token } = await response.json();
+                  console.log(message); // Afficher un message de succès ou rediriger vers une autre page
+                  console.log(data); // Utiliser les données de l'utilisateur si nécessaire
+                  console.log(token); // Enregistrer le jeton JWT dans le local storage ou le contexte d'authentification
+                  localStorage.setItem('token', token);
+                } else {
+                    alert("email or paswword is incorrect");
+
+                  const { message } = await response.json();
+                  console.log(message); // Afficher un message d'erreur si les identifiants sont invalides
+                }
+              } catch (error) {
+                console.log(error);
+              }
+            };
     }
+    
 
     return (
         <div className="login-page-container">
