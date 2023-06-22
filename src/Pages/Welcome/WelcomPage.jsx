@@ -1,3 +1,4 @@
+import Images from "../../Images";
 import "./Welcome.css";
 
 const WelcomPage = () => {
@@ -31,7 +32,9 @@ const WelcomPage = () => {
                   
                 </div>
                 <div className="welcome-body-right">
-
+                    <div className="image-container">
+                        <img src={Images.welcome}></img>
+                    </div>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import icon_login from "./login_page_icon.png";
 
 import icon_password from "./icon_password.png";
 import icon_email from "./icon_email.png";
+import welcome from "./welcome.png";
 
 
 
@@ -13,5 +14,6 @@ export default {
     icon_flash,
     icon_login,
     icon_email , 
-    icon_password
+    icon_password,
+    welcome,
 }
