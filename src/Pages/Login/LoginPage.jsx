@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Images from "../../Images";
 import CustomFloattingInput from "../components/Input";
 import "./Login.css";
+import { Link  } from "react-router-dom";
 
 const  LoginPage = () => {
 
-
+  
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
 
@@ -30,6 +31,8 @@ const  LoginPage = () => {
                   console.log(data); // Utiliser les données de l'utilisateur si nécessaire
                   console.log(token); // Enregistrer le jeton JWT dans le local storage ou le contexte d'authentification
                   localStorage.setItem('token', token);
+                  localStorage.setItem('user', JSON.stringify(data));
+                  window.location.href = "/welecome";
                 } else {
                     alert("email or paswword is incorrect");
 
@@ -40,6 +43,7 @@ const  LoginPage = () => {
                 console.log(error);
               }
             };
+          
     }
     
 
@@ -125,7 +129,7 @@ const  LoginPage = () => {
                     </div>
                     <div className="register-here" >
                         <span>If u dont have an account yet , </span>
-                        <span> register here</span>
+                        <span> <Link to="/register">register here</Link> </span>
                     </div>
                     <div className="register-line">
 
